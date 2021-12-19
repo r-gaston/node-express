@@ -1,6 +1,6 @@
 const express = require('express');
 const partnerRouter = express.Router();
-​
+
 partnerRouter.route('/')
 .all((req, res, next) => {
     res.statusCode = 200;
@@ -20,7 +20,7 @@ partnerRouter.route('/')
 .delete((req, res) => {
     res.end('Deleting all partners');
 });
-​
+
 partnerRouter.route('/:partnerId')
 .all((req, res, next) => {
     res.statusCode = 200;
